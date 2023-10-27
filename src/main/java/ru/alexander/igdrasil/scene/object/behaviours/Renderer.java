@@ -1,7 +1,7 @@
-package ru.alexander.igdrasil._v2.scene.object.behaviours;
+package ru.alexander.igdrasil.scene.object.behaviours;
 
 import ru.alexander.igdrasil.Game;
-import ru.alexander.igdrasil._v2.scene.object.Behaviour;
+import ru.alexander.igdrasil.scene.object.Behaviour;
 
 public abstract class Renderer extends Behaviour implements Comparable<Renderer> {
 
@@ -16,14 +16,14 @@ public abstract class Renderer extends Behaviour implements Comparable<Renderer>
 
     @Override
     public void onStart() {
-        Game.getWindow().getDrawables().add(this);
+//        Game.getWindow().getDrawables().add(this);
     }
 
     public abstract void render();
 
     @Override
     public void onDestroy() {
-        Game.getWindow().getDrawables().remove(this);
+//        Game.getWindow().getDrawables().remove(this);
 
     }
 

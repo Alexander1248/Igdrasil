@@ -1,4 +1,4 @@
-package ru.alexander.igdrasil._v2.scene.object;
+package ru.alexander.igdrasil.scene.object;
 
 public abstract class Behaviour {
     protected GameObject gameObject;

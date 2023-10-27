@@ -1,4 +1,4 @@
-package ru.alexander.igdrasil._v2.scene.object;
+package ru.alexander.igdrasil.scene.object;
 
 import ru.alexander.igdrasil.scene.ChildList;
 import ru.alexander.igdrasil.vectors.Vector2;

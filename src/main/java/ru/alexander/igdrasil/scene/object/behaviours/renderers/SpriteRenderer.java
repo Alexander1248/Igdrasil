@@ -1,12 +1,9 @@
-package ru.alexander.igdrasil.object.behaviours.renderers;
+package ru.alexander.igdrasil.scene.object.behaviours.renderers;
 
-import ru.alexander.igdrasil.Game;
+import ru.alexander.igdrasil.scene.object.Camera;
+import ru.alexander.igdrasil.scene.object.behaviours.Renderer;
 import ru.alexander.igdrasil.graphics.Rendering;
-import ru.alexander.igdrasil.object.Camera;
-import ru.alexander.igdrasil.object.behaviours.Renderer;
 import ru.alexander.igdrasil.vectors.Vector2;
-
-import static org.lwjgl.opengl.GL11.*;
 
 public class SpriteRenderer extends Renderer {
     public String texture;
@@ -47,10 +44,10 @@ public class SpriteRenderer extends Renderer {
     @Override
     public void render() {
         if (Camera.main == null) return;
-        Rendering.renderTexture(
-                gameObject.position, gameObject.size,
-                uvPos, uvSize, gameObject.rotation,
-                texture);
+//        Rendering.renderTexture(
+//                gameObject.position, gameObject.size,
+//                uvPos, uvSize, gameObject.rotation,
+//                texture);
     }
 
     @Override

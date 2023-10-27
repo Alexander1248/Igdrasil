@@ -1,19 +1,15 @@
 package ru.alexander.igdrasil.holders;
 
-import static org.lwjgl.opengl.GL11.*;
-import static org.lwjgl.opengl.GL12.GL_CLAMP_TO_EDGE;
-
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.URL;
-import java.nio.ByteBuffer;
-import java.nio.IntBuffer;
-
-import org.lwjgl.BufferUtils;
 import org.lwjgl.opengl.GL30;
 import org.lwjgl.stb.STBImage;
 import org.lwjgl.system.MemoryStack;
+
+import java.io.File;
+import java.nio.ByteBuffer;
+import java.nio.IntBuffer;
+
+import static org.lwjgl.opengl.GL11.*;
+import static org.lwjgl.opengl.GL12.GL_CLAMP_TO_EDGE;
 
 public class Texture {
 

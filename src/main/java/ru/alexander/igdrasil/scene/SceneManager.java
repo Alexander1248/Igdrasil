@@ -1,15 +1,8 @@
-package ru.alexander.igdrasil._v2.scene;
+package ru.alexander.igdrasil.scene;
 
-import ru.alexander.igdrasil._v2.Game;
-import ru.alexander.igdrasil._v2.utils.Resources;
-import ru.alexander.igdrasil.object.Behaviour;
-import ru.alexander.igdrasil.object.GameObject;
-
-import java.util.ArrayList;
+import ru.alexander.igdrasil.scene.object.GameObject;
+import ru.alexander.igdrasil.utils.Resources;
 import java.util.HashMap;
-import java.util.List;
-
-import static ru.alexander.igdrasil.scene.Scene.startRecursively;
 
 public class SceneManager {
     private SceneManager() {}
@@ -21,7 +14,7 @@ public class SceneManager {
     public static void loadScene(String sceneName, String scenePath) {
         Scene scene = new Scene(Resources.load(scenePath));
         for (GameObject object : scene.getObjects())
-            startRecursively(object);
+            Scene.startRecursively(object);
         scenes.put(sceneName, scene);
     }
     public static void unloadScene(String sceneName) {

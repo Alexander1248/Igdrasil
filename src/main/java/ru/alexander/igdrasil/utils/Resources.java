@@ -1,4 +1,4 @@
-package ru.alexander.igdrasil._v2.utils;
+package ru.alexander.igdrasil.utils;
 
 import java.io.InputStream;
 

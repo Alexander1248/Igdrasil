@@ -1,7 +1,5 @@
 package ru.alexander.igdrasil.vectors;
 
-import java.util.Objects;
-
 public class Vector3I {
     public int x;
     public int y;

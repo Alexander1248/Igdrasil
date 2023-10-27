@@ -1,8 +1,8 @@
-package ru.alexander.igdrasil._v2.scene.object.behaviours;
+package ru.alexander.igdrasil.scene.object.behaviours;
 
 import ru.alexander.igdrasil.Game;
-import ru.alexander.igdrasil._v2.scene.object.Behaviour;
-import ru.alexander.igdrasil._v2.scene.object.Camera;
+import ru.alexander.igdrasil.scene.object.Behaviour;
+import ru.alexander.igdrasil.scene.object.Camera;
 
 public class CameraBehaviour extends Behaviour {
 
@@ -24,7 +24,7 @@ public class CameraBehaviour extends Behaviour {
     @Override
     public void onUpdate() {
         if (this != Camera.main) return;
-        Game.getWindow().update();
+//        Game.getWindow().update();
     }
 
 

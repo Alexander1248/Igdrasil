@@ -1,7 +1,6 @@
 package ru.alexander.igdrasil.vectors;
 
 import java.awt.*;
-import java.util.Objects;
 
 public class Vector3 {
     public double x;

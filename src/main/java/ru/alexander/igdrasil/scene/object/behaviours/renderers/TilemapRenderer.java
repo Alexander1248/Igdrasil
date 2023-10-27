@@ -1,16 +1,13 @@
-package ru.alexander.igdrasil.object.behaviours.renderers;
+package ru.alexander.igdrasil.scene.object.behaviours.renderers;
 
-import ru.alexander.igdrasil.Game;
+import ru.alexander.igdrasil.scene.object.Camera;
+import ru.alexander.igdrasil.scene.object.behaviours.Renderer;
 import ru.alexander.igdrasil.graphics.Rendering;
-import ru.alexander.igdrasil.object.Camera;
-import ru.alexander.igdrasil.object.behaviours.Renderer;
 import ru.alexander.igdrasil.vectors.Vector2;
 import ru.alexander.igdrasil.vectors.Vector2I;
 
 import java.util.HashMap;
 import java.util.Map;
-
-import static org.lwjgl.opengl.GL11.*;
 
 
 public class TilemapRenderer extends Renderer {
@@ -59,11 +56,11 @@ public class TilemapRenderer extends Renderer {
                     double sx = gameObject.position.x + size.x * x;
                     double sy = gameObject.position.y + size.y * y;
 
-                    Rendering.renderTexture(
-                            new Vector2(sx, sy), size,
-                            tex.uvPos, tex.uvSize,
-                            gameObject.rotation,
-                            tex.textureName);
+//                    Rendering.renderTexture(
+//                            new Vector2(sx, sy), size,
+//                            tex.uvPos, tex.uvSize,
+//                            gameObject.rotation,
+//                            tex.textureName);
                 }
             }
 

@@ -1,11 +1,11 @@
 package ru.alexander.igdrasil.scene;
 
 
-import ru.alexander.igdrasil.object.GameObject;
+
+import ru.alexander.igdrasil.scene.object.GameObject;
 
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.function.Predicate;
 
 public class ChildList extends ArrayList<GameObject> {
     private final GameObject parent;

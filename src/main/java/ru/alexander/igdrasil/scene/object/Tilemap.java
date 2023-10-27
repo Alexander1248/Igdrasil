@@ -1,7 +1,6 @@
-package ru.alexander.igdrasil.object;
+package ru.alexander.igdrasil.scene.object;
 
-import ru.alexander.igdrasil.object.behaviours.renderers.SpriteRenderer;
-import ru.alexander.igdrasil.object.behaviours.renderers.TilemapRenderer;
+import ru.alexander.igdrasil.scene.object.behaviours.renderers.TilemapRenderer;
 import ru.alexander.igdrasil.vectors.Vector2;
 
 public class Tilemap extends GameObject {

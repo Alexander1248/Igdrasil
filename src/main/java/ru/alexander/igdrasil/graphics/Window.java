@@ -1,24 +1,15 @@
 package ru.alexander.igdrasil.graphics;
 
 import org.lwjgl.glfw.GLFWErrorCallback;
-import org.lwjgl.glfw.GLFWImage;
-import org.lwjgl.glfw.GLFWWindowSizeCallback;
 import org.lwjgl.opengl.GL;
-import org.lwjgl.opengl.GL11;
-import org.lwjgl.stb.STBImage;
-import org.lwjgl.system.MemoryStack;
-import ru.alexander.igdrasil.object.behaviours.Renderer;
-import ru.alexander.igdrasil.vectors.Vector2I;
+import ru.alexander.igdrasil.scene.object.behaviours.Renderer;
 
-import java.nio.ByteBuffer;
-import java.nio.IntBuffer;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.atomic.AtomicReference;
 
 import static org.lwjgl.glfw.GLFW.*;
 import static org.lwjgl.opengl.GL11.*;
-import static org.lwjgl.system.MemoryUtil.*;
+import static org.lwjgl.system.MemoryUtil.NULL;
 
 public class Window {
     private final List<Renderer> renderers = new ArrayList<>();

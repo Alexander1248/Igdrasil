@@ -1,7 +1,5 @@
 package ru.alexander.igdrasil.vectors;
 
-import java.util.Objects;
-
 public class Vector2 {
     public double x;
     public double y;
